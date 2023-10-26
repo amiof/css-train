@@ -1,0 +1,57 @@
+.container {
+  width: 300px;
+  height: 400px;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.card {
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid black; */
+  border-radius: 2rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 1500ms;
+  transform-style: preserve-3d;
+}
+.container:hover > .card {
+  transform: rotateY(180deg) ;
+}
+.front {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url("https://www.stockvault.net/data/2011/05/31/124348/preview16.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 2rem;
+  backface-visibility: hidden;
+  box-shadow: 10px 10px 20px rgba(0,0,0,0.4);
+}
+.back {
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 10px solid blue;
+  border-radius: 2rem;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: white;
+  transform: rotateY(180deg) ;
+  backface-visibility: hidden;
+  box-shadow: 10px 10px 20px rgba(0,0,0,0.4);
+}
