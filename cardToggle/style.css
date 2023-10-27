@@ -26,7 +26,7 @@ body {
   transform-style: preserve-3d;
 }
 .container:hover > .card {
-  transform: rotateY(180deg) ;
+  transform: rotateY(180deg) rotateZ(180deg) ;
 }
 .front {
   /* border: 1px solid red; */
@@ -51,7 +51,7 @@ body {
   height: 100%;
   position: absolute;
   background: white;
-  transform: rotateY(180deg) ;
+  transform: rotateY(180deg) rotateZ(180deg) ;
   backface-visibility: hidden;
   box-shadow: 10px 10px 20px rgba(0,0,0,0.4);
 }
